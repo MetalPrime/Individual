@@ -13,7 +13,7 @@ public class Main extends PApplet{
 	
 	Logic logic= new Logic(this);
 	GameScreen gameScreen = new GameScreen(this);
-	
+	int screen;
 	
 	public void settings() {
 		size(1000,800);
@@ -24,10 +24,16 @@ public class Main extends PApplet{
 		logic.loadImages();
 		gameScreen.loadImages();
 		logic.createInitialOrganisms();
+		screen = 0;
 	}
 	
 	public void draw() {
 		background(255);
+		switch(screen) {
+		case 0:
+			
+			break;
+		case 1:
 		gameScreen.paintBg();
 		logic.paintOrganisms();
 		gameScreen.paintIcons();
@@ -35,11 +41,22 @@ public class Main extends PApplet{
 		logic.start();
 		}
 		//logic.timer();
+		break;
+		}
+	
 		
 	}
 	
 	public void mousePressed() {
-		gameScreen.pause();
+		switch(screen) {
+		case 0:
+			
+			break;
+		case 1:
+			gameScreen.pause();
+			break;
+		}
+		
 	
 	}
 
