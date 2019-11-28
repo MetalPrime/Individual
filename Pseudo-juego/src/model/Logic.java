@@ -65,7 +65,7 @@ public class Logic {
 
 			if(type == 0){
 					types1.add(new ListType(x, y, age,status,gender,image1,app, type));
-					System.out.println(gender);
+					System.out.println(types1.getClass().);
 				}
 				
 				
