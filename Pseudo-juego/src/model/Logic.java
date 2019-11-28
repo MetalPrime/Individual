@@ -11,6 +11,8 @@ public class Logic {
 	private PImage image1;
 	private PImage image2;
 	private PImage image3;
+	private PImage image4;
+	private PImage image5;
 	
 	private ArrayList<ListType> types1;
 	private ArrayList<ListType> types2;
@@ -42,6 +44,8 @@ public class Logic {
 		image1=app.loadImage("data/amenaM1.png");
 		image2=app.loadImage("data/amenaM2.png");
 		image3=app.loadImage("data/amena3.png");
+		image4=app.loadImage("data/amenaF1.png");
+		image5=app.loadImage("data/amenaF2.png");
 	}
 
 	public void createInitialOrganisms() {
@@ -57,18 +61,21 @@ public class Logic {
 			int type = Integer.parseInt(info[0]);
 			String status = info[1];
 			int age = Integer.parseInt(info[2]);
-			String sex = info[3];
+			String gender = info[3];
 
 			if(type == 0){
-				types1.add(new ListType(x, y, age,status,sex,image1,app, type));
-			}
+					types1.add(new ListType(x, y, age,status,gender,image1,app, type));
+					System.out.println(gender);
+				}
+				
+				
 			
 			if(type == 1){
-				types2.add(new ListType(x, y, age,status,sex,image2,app, type));
+				types2.add(new ListType(x, y, age,status,gender,image2,app, type));
 			}
 			
 			if(type == 2){
-				types3.add(new ListType(x, y, age,status,sex,image3,app, type));
+				types3.add(new ListType(x, y, age,status,gender,image3,app, type));
 			}
 			
 		}
