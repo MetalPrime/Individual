@@ -35,8 +35,7 @@ public class Main extends PApplet{
 		logic.start();
 		}
 		//logic.timer();
-		int yolo=0;
-		System.out.println(yolo);
+		
 	}
 	
 	public void mousePressed() {

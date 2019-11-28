@@ -62,16 +62,25 @@ public class Logic {
 			String status = info[1];
 			int age = Integer.parseInt(info[2]);
 			String gender = info[3];
+			System.out.println(gender);
 
-			if(type == 0){
+			if(type == 0 ){
+				if(gender.equals("macho")) {
 					types1.add(new ListType(x, y, age,status,gender,image1,app, type));
-					System.out.println(types1.getClass().);
+				}
+				if(gender.equals("hembra")) {
+					types1.add(new ListType(x, y, age,status,gender,image4,app, type));
+				}
 				}
 				
-				
-			
 			if(type == 1){
-				types2.add(new ListType(x, y, age,status,gender,image2,app, type));
+				if(gender.equals("macho")) {
+					types2.add(new ListType(x, y, age,status,gender,image2,app, type));
+				}
+				if(gender.equals("hembra")) {
+					types2.add(new ListType(x, y, age,status,gender,image5,app, type));
+				}
+			
 			}
 			
 			if(type == 2){
