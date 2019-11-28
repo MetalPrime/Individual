@@ -39,9 +39,9 @@ public class Logic {
 	}
 	
 	public void loadImages(){
-		image1=app.loadImage("data/amoeba1.png");
-		image2=app.loadImage("data/amoeba2.png");
-		image3=app.loadImage("data/amoeba3.png");
+		image1=app.loadImage("data/amenaM1.png");
+		image2=app.loadImage("data/amenaM2.png");
+		image3=app.loadImage("data/amena3.png");
 	}
 
 	public void createInitialOrganisms() {

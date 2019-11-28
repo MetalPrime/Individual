@@ -42,13 +42,13 @@ public class ListType extends Amoeba implements Runnable{
 		// TODO Auto-generated method stub
 		switch(type) {
 		case 0:
-			app.image(img, x, y);
+			app.image(img, x, y,20,20);
 			break;
 		case 1:
-			app.image(img, x, y);
+			app.image(img, x, y,20,20);
 			break;
 		case 2:
-			app.image(img, x, y);
+			app.image(img, x, y,30,30);
 			break;
 		}
 		
