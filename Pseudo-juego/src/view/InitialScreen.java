@@ -8,6 +8,7 @@ public class InitialScreen {
 	private PApplet app;
 	private PImage background;
 	private PImage botton;
+	private PImage title;
 	private Boolean continuar;
 	
 	public InitialScreen(PApplet app) {
@@ -19,17 +20,18 @@ public class InitialScreen {
 	public void loadImages() {
 		background= app.loadImage("./data/background.png");
 		botton = app.loadImage("./data/reload.png");
+		title = app.loadImage("./data/name.png");
 	}
 	
 	public void paintBg() {
-		int width = 1000;
-		int height = 800;
+
 		
-		app.image(background,width/2, height/2);
+		app.image(background,app.width/2, app.height/2);
 	}
 	
 	public void paintBotton() {
-		app.image(botton,500,0);
+		app.image(title, app.width/2,app.height/3,450,300);
+		app.image(botton,500,500);
 	}
 	
 	public void nextPage() {

@@ -36,6 +36,8 @@ public abstract class Amoeba {
 	abstract void grow();
 	
 	abstract void dieByAge();
+	
+	abstract void sex();
 	//getters y setters
 
 	public float getX() {

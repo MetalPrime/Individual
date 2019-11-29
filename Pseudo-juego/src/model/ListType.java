@@ -142,5 +142,27 @@ public class ListType extends Amoeba implements Runnable{
 		
 	}
 
+	@Override
+	void sex() {
+		// TODO Auto-generated method stub
+		switch(type) {
+		case 0:
+			if(type == 0 ){	
+				status="muerto";
+			}
+			break;
+		case 1:
+			if(age==5){	
+				status="muerto";
+			}
+			break;
+		case 2:
+			if(age==20){	
+				status="muerto";
+			}
+			break;
+		}
+	}
+
 
 }
